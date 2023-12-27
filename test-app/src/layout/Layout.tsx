@@ -1,9 +1,17 @@
+import Header from './Header'
 import { Outlet } from 'react-router-dom'
+import SideBar from './Sidebar'
+import { useState } from 'react'
 
 export const Layout = () => {
+
+  const [openSide, setOpenSide] = useState(window.innerWidth > 650 ? true : false)
+
   return (
-    <div dir='rtl'
-    className='
+    <>
+      <Header openSide={openSide} setOpenClose={setOpenSide}/>
+      <div
+        className='
      
     bg-[var(--bgColor)]
     max-sm:w-full
@@ -16,9 +24,11 @@ export const Layout = () => {
     h-screen
     overflow-y-auto 
     text-[var(--white)]'>
-    
-    <Outlet />
 
-    </div>
+        <Outlet />
+        
+      </div>
+      <SideBar openSide={openSide} setOpenClose={setOpenSide} />
+    </>
   )
 }
