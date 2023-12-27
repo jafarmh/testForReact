@@ -70,16 +70,6 @@ const SideBar = ({ openSide, setOpenClose }: SideMenuProps) => {
                         </ListItemButton>
                     </ListItem>
 
-                    <ListItem key={'menu2'} disablePadding>
-                        <ListItemButton dir='rtl'>
-                            <ListItemIcon>
-                                <ShowChartIcon />
-                            </ListItemIcon>
-                            <ListItemText className='text-right w-full'>
-                                <Link to="/chart"> <b > نمودار</b> </Link>
-                            </ListItemText>
-                        </ListItemButton>
-                    </ListItem>
 
                     <ListItem key={'menu2'} disablePadding>
                         <ListItemButton dir='rtl'>
