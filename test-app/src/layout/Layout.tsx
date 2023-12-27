@@ -12,17 +12,18 @@ export const Layout = () => {
       <Header openSide={openSide} setOpenClose={setOpenSide}/>
       <div
         className='
-     
+ 
+    !mt-20
     bg-[var(--bgColor)]
     max-sm:w-full
-    max-md:w-full
-    w-[50%] 
+    max-md:w-[90%]
+    max-xl:w-[80%]
+    w-[80%] 
     m-auto
     max-lg:m-auto 
     max-xl:m-auto
     max-2xl:m-auto
-    h-screen
-    overflow-y-auto 
+  
     text-[var(--white)]'>
 
         <Outlet />
