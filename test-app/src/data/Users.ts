@@ -1,7 +1,29 @@
 import { UserEntityProps } from "../interface/Entity"
 import { createSlice } from "@reduxjs/toolkit"
 
-const initialState: UserEntityProps[] = []
+const initialState: UserEntityProps[] = [
+    {
+        name:"کاربر یک",
+        mobile:"0913578536",
+        email:"karbar1@yahoo.com"
+    },
+    {
+        name:"کاربر 2",
+        mobile:"0913578536",
+        email:"karbar2@yahoo.com"
+    },
+    {
+        name:"کاربر سه",
+        mobile:"0913578516",
+        email:"karbar3@yahoo.com"
+    },
+    {
+        name:"کاربر 4",
+        mobile:"0913128536",
+        email:"karbar4@yahoo.com"
+    },
+    
+]
 
 
 export const UserSlice = createSlice({
