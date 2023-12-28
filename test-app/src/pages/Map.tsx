@@ -9,7 +9,7 @@ import markerIconPng from "leaflet/dist/images/marker-icon.png"
 const Map = () => {
     return (
         <>
-            <div className=' w-[100%] flex justify-center items-center mt-10 h-[400px]  '>
+            <div className=' w-[100%] flex justify-center items-center mt-10 h-screen md:h-[80vh] '>
 
                 <MapContainer center={[32.6539, 51.6660]}
                     zoom={13}

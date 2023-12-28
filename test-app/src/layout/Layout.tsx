@@ -17,8 +17,8 @@ export const Layout = () => {
     bg-[var(--bgColor)]
     max-sm:w-full
     max-md:w-[90%]
-    max-xl:w-[70%]
-    w-[70%] 
+    max-xl:w-[60%]
+    w-[60%] 
     m-auto
     max-lg:m-auto 
     max-xl:m-auto
