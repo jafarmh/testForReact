@@ -9,7 +9,7 @@ export const Layout = () => {
 
   return (
     <>
-      <Header openSide={openSide} setOpenClose={setOpenSide}/>
+      <Header openSide={openSide} setOpenClose={setOpenSide} />
       <div
         className='
  
@@ -17,8 +17,8 @@ export const Layout = () => {
     bg-[var(--bgColor)]
     max-sm:w-full
     max-md:w-[90%]
-    max-xl:w-[80%]
-    w-[80%] 
+    max-xl:w-[70%]
+    w-[70%] 
     m-auto
     max-lg:m-auto 
     max-xl:m-auto
@@ -27,7 +27,7 @@ export const Layout = () => {
     '>
 
         <Outlet />
-        
+
       </div>
       <SideBar openSide={openSide} setOpenClose={setOpenSide} />
     </>

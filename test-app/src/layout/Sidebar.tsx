@@ -62,7 +62,7 @@ const SideBar = ({ openSide, setOpenClose }: SideMenuProps) => {
                                 <PeopleAltIcon />
                             </ListItemIcon>
                             <ListItemText className='text-right w-full'>
-                                <Link to="/user"> <b > کاربران</b> </Link>
+                                <Link to="/users"> <b > کاربران</b> </Link>
 
                             </ListItemText>
                         </ListItemButton>
@@ -75,7 +75,7 @@ const SideBar = ({ openSide, setOpenClose }: SideMenuProps) => {
                                 <ProductionQuantityLimitsIcon />
                             </ListItemIcon>
                             <ListItemText className='text-right w-full'>
-                                <Link to="/product"> <b >محصولات </b> </Link>
+                                <Link to="/products"> <b >محصولات </b> </Link>
 
                             </ListItemText>
                         </ListItemButton>
