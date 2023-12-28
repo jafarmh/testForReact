@@ -24,7 +24,7 @@ export const Layout = () => {
     max-xl:m-auto
     max-2xl:m-auto
   
-    text-[var(--white)]'>
+    '>
 
         <Outlet />
         

@@ -45,6 +45,17 @@ const SideBar = ({ openSide, setOpenClose }: SideMenuProps) => {
                 </DrawerHeader>
                 <Divider />
                 <List>
+                <ListItem key={'menu2'} disablePadding>
+                        <ListItemButton dir='rtl'>
+                            <ListItemIcon>
+                                <ShowChartIcon />
+                            </ListItemIcon>
+                            <ListItemText className='text-right w-full'>
+                                <Link to="/"> <b > داشبورد</b> </Link>
+                            </ListItemText>
+                        </ListItemButton>
+                    </ListItem>
+
                     <ListItem key={'menu1'} disablePadding>
                         <ListItemButton dir='rtl'>
                             <ListItemIcon>

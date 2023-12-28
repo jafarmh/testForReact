@@ -1,10 +1,13 @@
 import { configureStore } from '@reduxjs/toolkit'
+import productsData from './Products'
+import usersData from './Users'
 
 // ...
 
 export const store = configureStore({
   reducer: {
-    
+    usersData,
+    productsData
   },
 })
 
