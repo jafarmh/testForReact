@@ -1,5 +1,6 @@
+import { ProductEntityProps, UserEntityProps } from './Entity';
+
 import React from 'react';
-import { UserEntityProps } from './Entity';
 
 export interface SideMenuProps {
     openSide: boolean,
@@ -17,4 +18,9 @@ export interface ListUserProps{
 
 export interface CardProps{
     children:React.ReactNode,
+}
+
+export interface ListProductProps{
+
+    datas:ProductEntityProps[]
 }

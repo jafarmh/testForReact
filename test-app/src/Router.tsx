@@ -6,6 +6,7 @@ import Index from "./pages/Index";
 import { Layout } from "./layout/Layout";
 
 const Users = React.lazy(() => import("./pages/Users"));
+const Products = React.lazy(() => import("./pages/Products"));
 
 export default function Router() {
     return (
@@ -17,6 +18,12 @@ export default function Router() {
                 <Route path="users" element={
                     <React.Suspense fallback={<Loading />}>
                         <Users />
+                    </React.Suspense>
+                } />
+
+                <Route path="products" element={
+                    <React.Suspense fallback={<Loading />}>
+                        <Products />
                     </React.Suspense>
                 } />
 
