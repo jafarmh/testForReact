@@ -7,6 +7,7 @@ import { Layout } from "./layout/Layout";
 
 const Users = React.lazy(() => import("./pages/Users"));
 const Products = React.lazy(() => import("./pages/Products"));
+const Map = React.lazy(() => import("./pages/Map"));
 
 export default function Router() {
     return (
@@ -24,6 +25,11 @@ export default function Router() {
                 <Route path="products" element={
                     <React.Suspense fallback={<Loading />}>
                         <Products />
+                    </React.Suspense>
+                } />
+                <Route path="map" element={
+                    <React.Suspense fallback={<Loading />}>
+                        <Map />
                     </React.Suspense>
                 } />
 
